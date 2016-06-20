@@ -52,7 +52,7 @@ function update(city, kelvin, sky, icon, humidity, windMps, windDir, measurement
   }
 
   $('#city').text(city);
-  $('#tempCircle').html('<img class="icon" src="http://openweathermap.org/img/w/' + icon + '.png" height="100" width="100"><br><span class="smallTxt">' + sky + '</span><br>' + temp);
+  $('#tempCircle').html('<img class="icon" src="https://openweathermap.org/img/w/' + icon + '.png" height="100" width="100"><br><span class="smallTxt">' + sky + '</span><br>' + temp);
   $('#humidity').text(Math.round(humidity) + '%');
   $('#wind').text(direction(windDir) + ' - ' + wind);
 
