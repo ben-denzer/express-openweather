@@ -1,0 +1,1 @@
+My old OpenWeather app wasn't working in Chrome because they decided that you can't do HTML GeoLocation unless you are on HTTPS. That's fine, except that OpenWeather's api won't serve over HTTPS, so it just wouldn't work. Refactored to use express as a proxy to make the api call.
