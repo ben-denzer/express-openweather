@@ -4,7 +4,7 @@ $(function() {
     var geoSuccess = function(position) {
       var geoLat = Math.round(position.coords.latitude);
       var geoLon = Math.round(position.coords.longitude);
-      $.getJSON('/api/' + geoLat + '/' + geoLon, function(data) {
+      $.getJSON('/projects/weather/api/' + geoLat + '/' + geoLon, function(data) {
         var measurement;
         data.sys.country === 'US' ? measurement = 'imperial' : measurement = 'metric';
         update(data.name, data.main.temp, data.weather[0].main, data.weather[0].icon, data.main.humidity, data.wind.speed, data.wind.deg, measurement);
